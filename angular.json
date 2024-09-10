@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "andresjosehr-portfolio": {
+        "fitnfork": {
             "projectType": "application",
             "schematics": {},
             "root": "",
@@ -19,7 +19,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/andresjosehr-portfolio",
+                        "outputPath": "dist/fitnfork",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -85,18 +85,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                      "buildTarget": "andresjosehr-portfolio:build"
+                      "buildTarget": "fitnfork:build"
                     },
                     "configurations": {
                         "production": {
-                          "buildTarget": "andresjosehr-portfolio:build:production"
+                          "buildTarget": "fitnfork:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                      "buildTarget": "andresjosehr-portfolio:build"
+                      "buildTarget": "fitnfork:build"
                     }
                 },
                 "test": {
@@ -134,11 +134,11 @@
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
                         "protractorConfig": "e2e/protractor.conf.js",
-                        "devServerTarget": "andresjosehr-portfolio:serve"
+                        "devServerTarget": "fitnfork:serve"
                     },
                     "configurations": {
                         "production": {
-                            "devServerTarget": "andresjosehr-portfolio:serve:production"
+                            "devServerTarget": "fitnfork:serve:production"
                         }
                     }
                 }
