@@ -1,5 +1,5 @@
 #!/bin/bash
 ng build --configuration production
 git checkout production
-cp -r dist/fitnfork/* ./
-cp dist/fitnfork/.htaccess ./.htaccess
+cp -r dist/fitnfork/* ./docs/
+cp dist/fitnfork/.htaccess ./docs/.htaccess
